@@ -15,7 +15,7 @@ module.exports = (app) => {
       })
       .catch((error) => {
         const message =
-          "La liste des dpokémons n'a pas pu être récupérée. Réessayer dans quelques instants.";
+          "La liste des pokémons n'a pas pu être récupérée. Réessayer dans quelques instants.";
         res.status(500).json({ message, data: error });
       });
   });
