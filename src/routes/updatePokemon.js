@@ -26,7 +26,7 @@ module.exports = (app) => {
           return res.status(400).json({ ùessage: error.message, data: error });
         }
         const message =
-          "La liste des dpokémons n'a pas pu être modifié. Réessayer dans quelques instants.";
+          "La liste des pokémons n'a pas pu être modifié. Réessayer dans quelques instants.";
         res.status(500).json({ message, data: error });
       });
   });
